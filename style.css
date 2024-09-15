@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Overpass;
+  font-weight: 15px;
+}
+
+body {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+body article {
+  width: 50%;
+  max-width: 500px;
+  min-width: 400px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body article.rating {
+  padding: 30px 40px;
+}
+body article.rating .star {
+  padding: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+body article.rating .star img {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+body article.rating section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body article.rating section h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+body article.rating section p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+body article.rating form .scores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+body article.rating form .scores .score {
+  padding: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.2);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body article.rating form .scores .score:hover {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+body article.rating form .scores .selected {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(216, 12%, 8%);
+}
+body article.rating form .scores .selected:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+body article.rating form button {
+  padding: 12px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: hsl(216, 12%, 8%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+body article.rating form button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+}
+body article.message {
+  padding: 40px;
+  display: none;
+  text-align: center;
+}
+body article.message img {
+  width: 60%;
+  margin-bottom: 30px;
+}
+body article.message .comment {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.2);
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(25, 97%, 53%);
+  letter-spacing: 1px;
+}
+body article.message section {
+  margin-top: 40px;
+}
+body article.message section h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+body article.message section p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    padding: 20px;
+  }
+  body article {
+    width: 100%;
+    min-width: 250px;
+  }
+  body article.rating {
+    padding: 16px 20px;
+  }
+  body article.rating section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body article.rating section h1 {
+    font-size: 1.75rem;
+  }
+  body article.rating form .scores {
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  body article.rating form .scores .score {
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+  body article.rating form button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  body article.rating .star {
+    padding: 8px;
+  }
+  body article.rating .star img {
+    width: 20px;
+    height: 20px;
+  }
+  body article.message {
+    padding: 20px;
+  }
+  body article.message img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  body article.message section {
+    margin-top: 30px;
+  }
+  body article.message section h2 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
